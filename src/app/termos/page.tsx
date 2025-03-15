@@ -9,7 +9,7 @@ export default function TermosPage() {
       <section className="flex-grow pt-24 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-[#213365] to-[#eb594c]">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#213365] mb-4">
               Termos de Uso
             </h1>
             <p className="text-xl text-gray-600 mb-8">

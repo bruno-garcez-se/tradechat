@@ -49,12 +49,6 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="relative">
-          <label
-            htmlFor="name"
-            className="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600"
-          >
-            Nome
-          </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <svg
@@ -84,12 +78,6 @@ export default function ContactForm() {
         </div>
 
         <div className="relative">
-          <label
-            htmlFor="email"
-            className="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600"
-          >
-            Email
-          </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <svg
@@ -117,12 +105,6 @@ export default function ContactForm() {
       </div>
 
       <div className="relative">
-        <label
-          htmlFor="phone"
-          className="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600"
-        >
-          Telefone
-        </label>
         <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <svg
@@ -148,14 +130,8 @@ export default function ContactForm() {
       </div>
 
       <div className="relative">
-        <label
-          htmlFor="message"
-          className="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600"
-        >
-          Mensagem
-        </label>
         <div className="relative">
-          <div className="absolute top-3 left-0 pl-3 flex items-start pointer-events-none">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <svg
               className="h-5 w-5 text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +140,7 @@ export default function ContactForm() {
             >
               <path
                 fillRule="evenodd"
-                d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H6z"
+                d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
                 clipRule="evenodd"
               />
             </svg>
@@ -172,101 +148,41 @@ export default function ContactForm() {
           <textarea
             name="message"
             id="message"
-            rows={4}
             required
             value={formData.message}
             onChange={handleChange}
+            rows={4}
             className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#213365] focus:border-transparent transition duration-150 ease-in-out resize-none"
-            placeholder="Digite sua mensagem aqui..."
+            placeholder="Sua mensagem"
           />
         </div>
       </div>
 
-      <div>
+      <div className="flex justify-end">
         <button
           type="submit"
           disabled={status === 'sending'}
-          className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#213365] to-[#1a2951] hover:from-[#1a2951] hover:to-[#213365] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#213365] transform transition duration-150 ease-in-out hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+          className={`px-6 py-2.5 bg-[#213365] text-white rounded-full hover:bg-[#1a2951] transition duration-150 ease-in-out ${
+            status === 'sending' ? 'opacity-50 cursor-not-allowed' : ''
+          }`}
         >
-          {status === 'sending' ? (
-            <>
-              <svg
-                className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                ></path>
-              </svg>
-              Enviando...
-            </>
-          ) : (
-            'Enviar Mensagem'
-          )}
+          {status === 'sending' ? 'Enviando...' : 'Enviar Mensagem'}
         </button>
       </div>
 
       {status === 'success' && (
-        <div className="rounded-lg bg-green-50 p-4 border border-green-100">
-          <div className="flex">
-            <div className="flex-shrink-0">
-              <svg
-                className="h-5 w-5 text-green-400"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="ml-3">
-              <p className="text-sm font-medium text-green-800">
-                Mensagem enviada com sucesso! Entraremos em contato em breve.
-              </p>
-            </div>
-          </div>
+        <div className="mt-4 p-4 bg-green-50 rounded-lg">
+          <p className="text-green-800">
+            Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </p>
         </div>
       )}
 
       {status === 'error' && (
-        <div className="rounded-lg bg-red-50 p-4 border border-red-100">
-          <div className="flex">
-            <div className="flex-shrink-0">
-              <svg
-                className="h-5 w-5 text-red-400"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <div className="ml-3">
-              <p className="text-sm font-medium text-red-800">
-                Erro ao enviar mensagem. Por favor, tente novamente ou entre em contato por email.
-              </p>
-            </div>
-          </div>
+        <div className="mt-4 p-4 bg-red-50 rounded-lg">
+          <p className="text-red-800">
+            Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.
+          </p>
         </div>
       )}
     </form>

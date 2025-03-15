@@ -10,7 +10,7 @@ export default function ContatoPage() {
       <section className="flex-grow pt-24 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
               Entre em Contato
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -27,7 +27,7 @@ export default function ContatoPage() {
 
             <div className="md:col-span-1 space-y-6">
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+                <h3 className="text-xl font-semibold text-[#213365] mb-4 text-center">
                   Email
                 </h3>
                 <p className="text-gray-600 text-center">
@@ -36,7 +36,7 @@ export default function ContatoPage() {
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+                <h3 className="text-xl font-semibold text-[#213365] mb-4 text-center">
                   Horário de Atendimento
                 </h3>
                 <p className="text-gray-600 text-center">
@@ -45,7 +45,7 @@ export default function ContatoPage() {
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+                <h3 className="text-xl font-semibold text-[#213365] mb-4 text-center">
                   Endereço
                 </h3>
                 <p className="text-gray-600 text-center">
