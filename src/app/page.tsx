@@ -62,13 +62,13 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="md:w-1/2 mt-12 md:mt-0">
+            <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center items-center">
               <Image
                 src="/hero-nova.png"
                 alt="Kanzap Hero"
-                width={300}
-                height={200}
-                className="w-full h-auto max-w-[300px] mx-auto"
+                width={500}
+                height={333}
+                className="w-full h-auto max-w-[500px] hover:scale-105 transition-transform duration-300"
                 priority
               />
             </div>
