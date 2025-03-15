@@ -4,14 +4,9 @@ import Footer from '../components/Footer'
 export default function PrivacidadePage() {
   return (
     <main className="flex min-h-screen flex-col">
-      {/* Header/Navbar */}
-      <nav className="fixed w-full bg-white shadow-md z-50">
-        <div className="container mx-auto px-6 py-4">
-          <Header />
-        </div>
-      </nav>
+      <Header />
 
-      <section className="flex-grow pt-32 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
+      <section className="flex-grow pt-24 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
