@@ -66,9 +66,9 @@ export default function Home() {
               <Image
                 src="/hero-nova.png"
                 alt="Kanzap Hero"
-                width={600}
-                height={400}
-                className="w-full h-auto"
+                width={300}
+                height={200}
+                className="w-full h-auto max-w-[300px] mx-auto"
                 priority
               />
             </div>
