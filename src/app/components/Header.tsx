@@ -48,6 +48,7 @@ export default function Header() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 hover:text-[#eb594c] focus:outline-none"
+              aria-label="Menu"
             >
               <svg
                 className="h-6 w-6"
@@ -69,35 +70,40 @@ export default function Header() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="md:hidden absolute left-0 right-0 top-16 bg-white shadow-lg">
+            <div className="px-4 py-3 space-y-3">
               <Link
                 href="/#recursos"
-                className="block px-3 py-2 text-gray-600 hover:text-[#eb594c]"
+                className="block text-gray-600 hover:text-[#eb594c] py-2"
+                onClick={() => setIsOpen(false)}
               >
                 Recursos
               </Link>
               <Link
                 href="/#precos"
-                className="block px-3 py-2 text-gray-600 hover:text-[#eb594c]"
+                className="block text-gray-600 hover:text-[#eb594c] py-2"
+                onClick={() => setIsOpen(false)}
               >
                 Planos
               </Link>
               <Link
                 href="/sobre"
-                className="block px-3 py-2 text-gray-600 hover:text-[#eb594c]"
+                className="block text-gray-600 hover:text-[#eb594c] py-2"
+                onClick={() => setIsOpen(false)}
               >
                 Sobre
               </Link>
               <Link
                 href="/contato"
-                className="block px-3 py-2 text-gray-600 hover:text-[#eb594c]"
+                className="block text-gray-600 hover:text-[#eb594c] py-2"
+                onClick={() => setIsOpen(false)}
               >
                 Contato
               </Link>
               <Link
                 href="https://app.kanzap.com.br/#/login"
-                className="block px-3 py-2 text-gray-600 hover:text-[#eb594c]"
+                className="block bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#1a2951] text-center"
+                onClick={() => setIsOpen(false)}
               >
                 Entrar
               </Link>
