@@ -14,7 +14,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="/logo.webp"
+                src="/logo.png"
                 alt="Kanzap Logo"
                 width={180}
                 height={54}
