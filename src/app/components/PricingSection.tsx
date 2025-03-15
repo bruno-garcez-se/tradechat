@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const PricingSection = () => {
   return (
-    <section id="precos" className="py-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
+    <section id="precos" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-16">Planos e Preços</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -83,15 +83,15 @@ const PricingSection = () => {
                 API de Integração
               </li>
             </ul>
-            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951] transition-colors">
+            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951]">
               Começar Agora
             </Link>
           </div>
 
           {/* Plano Profissional */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow relative">
+          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-[#213365] transform scale-105">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span className="bg-[#eb594c] text-white px-4 py-1 rounded-full text-sm">Mais Popular</span>
+              <span className="bg-[#213365] text-white px-4 py-1 rounded-full text-sm">Mais Popular</span>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Profissional</h3>
             <p className="text-4xl font-bold text-[#213365] mb-6">
@@ -165,7 +165,7 @@ const PricingSection = () => {
                 API de Integração
               </li>
             </ul>
-            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#eb594c] text-white py-3 px-6 rounded-full hover:bg-[#d54e43] transition-colors">
+            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951]">
               Começar Agora
             </Link>
           </div>
@@ -241,7 +241,7 @@ const PricingSection = () => {
                 API de Integração
               </li>
             </ul>
-            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951] transition-colors">
+            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951]">
               Começar Agora
             </Link>
           </div>
