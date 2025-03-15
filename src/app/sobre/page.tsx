@@ -12,7 +12,7 @@ export default function SobrePage() {
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
+      <section className="flex-grow pt-32 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
         <div className="container mx-auto px-6">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -84,12 +84,7 @@ export default function SobrePage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-6">
-          <Footer />
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 } 

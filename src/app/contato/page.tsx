@@ -12,38 +12,50 @@ export default function ContatoPage() {
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
+      <section className="flex-grow pt-32 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
         <div className="container mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Entre em Contato
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               Estamos aqui para ajudar. Preencha o formulário abaixo e entraremos em contato o mais breve possível.
             </p>
           </div>
 
-          <div className="mt-16 max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-            <ContactForm />
-          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="md:col-span-2">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <ContactForm />
+              </div>
+            </div>
 
-          <div className="mt-16 max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div className="md:col-span-1 space-y-6">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
                   Email
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-center">
                   kanzapinc@gmail.com
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
                   Horário de Atendimento
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-center">
                   Segunda a Sexta: 9h às 18h
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
+                  Endereço
+                </h3>
+                <p className="text-gray-600 text-center">
+                  Aracaju, Sergipe<br />
+                  Brasil
                 </p>
               </div>
             </div>
@@ -51,12 +63,7 @@ export default function ContatoPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-6">
-          <Footer />
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 } 
