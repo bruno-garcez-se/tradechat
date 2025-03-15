@@ -9,21 +9,21 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
+      <nav className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
             <Link href="/">
               <Image
                 src="/logo.png"
-                alt="Kanzap Logo"
+                alt="Kanzap"
                 width={180}
                 height={54}
+                priority
                 className="h-14 w-auto"
               />
             </Link>
           </div>
-          
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex space-x-8">
             <Link href="/#recursos" className="text-gray-600 hover:text-[#eb594c]">
               Recursos
             </Link>
@@ -36,41 +36,44 @@ export default function Header() {
             <Link href="/contato" className="text-gray-600 hover:text-[#eb594c]">
               Contato
             </Link>
-            <Link
-              href="https://app.kanzap.com.br/#/login"
-              className="text-gray-600 hover:text-[#eb594c]"
-            >
-              Entrar
-            </Link>
           </div>
-
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-[#eb594c] focus:outline-none"
-              aria-label="Menu"
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:block">
+              <Link
+                href="https://app.kanzap.com.br/#/login"
+                className="bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#1a2951]"
               >
-                {isOpen ? (
-                  <path d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
+                Entrar
+              </Link>
+            </div>
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-600 hover:text-[#eb594c] focus:outline-none"
+                aria-label="Menu"
+              >
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {isOpen ? (
+                    <path d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 
         {isOpen && (
-          <div className="md:hidden absolute left-0 right-0 top-16 bg-white shadow-lg">
+          <div className="md:hidden absolute left-0 right-0 top-[72px] bg-white shadow-lg">
             <div className="px-4 py-3 space-y-3">
               <Link
                 href="/#recursos"
