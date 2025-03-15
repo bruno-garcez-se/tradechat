@@ -66,9 +66,9 @@ export default function Home() {
               <Image
                 src="/hero-image.webp"
                 alt="Kanzap - Atendimento Multicanal"
-                width={700}
-                height={525}
-                className="rounded-lg shadow-xl w-full h-auto"
+                width={600}
+                height={450}
+                className="w-full h-auto max-w-[600px] mx-auto"
                 priority
               />
             </div>
