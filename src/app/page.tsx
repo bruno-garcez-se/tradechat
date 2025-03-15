@@ -64,11 +64,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 mt-12 md:mt-0">
               <Image
-                src="/hero-image.webp"
-                alt="Kanzap - Atendimento Multicanal"
+                src="/hero-nova.png"
+                alt="Kanzap Hero"
                 width={600}
-                height={450}
-                className="w-full h-auto max-w-[600px] mx-auto"
+                height={400}
+                className="w-full h-auto"
                 priority
               />
             </div>
