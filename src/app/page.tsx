@@ -66,9 +66,9 @@ export default function Home() {
               <Image
                 src="/hero-nova.png"
                 alt="Kanzap Hero"
-                width={500}
-                height={333}
-                className="w-full h-auto max-w-[500px] hover:scale-105 transition-transform duration-300"
+                width={425}
+                height={283}
+                className="w-full h-auto max-w-[425px] hover:scale-105 transition-transform duration-300"
                 priority
               />
             </div>
