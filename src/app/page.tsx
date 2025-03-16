@@ -7,6 +7,7 @@ import PricingSection from './components/PricingSection'
 import FeaturesSection from './components/FeaturesSection'
 import Header from './components/Header'
 import TestimonialsSection from './components/TestimonialsSection'
+import DemoScheduler from './components/DemoScheduler'
 
 export default function Home() {
   return (
@@ -165,20 +166,16 @@ export default function Home() {
 
         {/* Conteúdo */}
         <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto mb-12">
             <h2 className="text-4xl font-bold text-white mb-8 leading-tight">
-              Comece agora mesmo a transformar seu atendimento
+              Agende uma demonstração gratuita
             </h2>
             <p className="text-white/90 text-lg mb-8">
-              Integre todos os seus canais de comunicação em uma única plataforma
+              Descubra como o Kanzap pode transformar o atendimento da sua empresa
             </p>
-            <Link 
-              href="https://app.kanzap.com.br/#/signup" 
-              className="inline-block bg-white text-[#213365] px-8 py-3 rounded-full hover:bg-[#eb594c] hover:text-white transition-all duration-300 hover:scale-105 transform shadow-lg"
-            >
-              Começar Agora
-            </Link>
           </div>
+
+          <DemoScheduler />
         </div>
 
         {/* Efeito de Ondas */}
