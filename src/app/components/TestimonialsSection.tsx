@@ -64,29 +64,6 @@ export default function TestimonialsSection() {
             </div>
           </div>
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-8">
-            <div className="flex items-center">
-              <div className="text-[#213365]">
-                <span className="text-4xl font-bold">98%</span>
-                <p className="text-sm">Satisfação dos clientes</p>
-              </div>
-            </div>
-            <div className="flex items-center">
-              <div className="text-[#213365]">
-                <span className="text-4xl font-bold">50%</span>
-                <p className="text-sm">Redução no tempo de resposta</p>
-              </div>
-            </div>
-            <div className="flex items-center">
-              <div className="text-[#213365]">
-                <span className="text-4xl font-bold">2000+</span>
-                <p className="text-sm">Empresas atendidas</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
