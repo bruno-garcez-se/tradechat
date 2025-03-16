@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -6,7 +9,15 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">Kanzap</h3>
+            <div className="mb-4">
+              <Image
+                src="/logorodape.png"
+                alt="Kanzap"
+                width={120}
+                height={36}
+                className="w-auto h-9"
+              />
+            </div>
             <p className="text-gray-400">
               Sua solução completa para atendimento multicanal via WhatsApp.
             </p>
@@ -41,4 +52,4 @@ export default function Footer() {
       </div>
     </footer>
   )
-} 
+}
