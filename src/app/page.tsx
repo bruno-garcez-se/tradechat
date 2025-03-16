@@ -28,7 +28,7 @@ export default function Home() {
                 <Link href="https://app.kanzap.com.br/#/signup" className="bg-[#213365] text-white px-8 py-3 rounded-full hover:bg-[#eb594c] transition-colors duration-300">
                   Teste Grátis por 7 dias
                 </Link>
-                <Link href="#precos" className="border-2 border-[#213365] text-[#213365] px-8 py-3 rounded-full hover:bg-[#eb594c] hover:border-[#eb594c] hover:text-white transition-colors duration-300">
+                <Link href="#precos" className="bg-[#eb594c] text-white px-8 py-3 rounded-full hover:bg-[#213365] transition-colors duration-300">
                   Ver Planos
                 </Link>
               </div>
