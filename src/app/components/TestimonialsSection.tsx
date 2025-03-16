@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -8,18 +9,21 @@ const TestimonialsSection = () => {
       name: 'Louise Helen',
       role: 'Escrevente',
       company: 'Cartório 1º Ofício',
+      image: '/cart.png',
       text: 'O Kanzap revolucionou nossa forma de atender clientes. A organização e eficiência melhoraram drasticamente, e nossos clientes notaram a diferença!'
     },
     {
       name: 'Rafael',
       role: 'Proprietário',
       company: 'Agência R2',
+      image: '/r2.png',
       text: 'Desde que começamos a usar o Kanzap, nossas vendas aumentaram em 40%. A facilidade de gerenciar múltiplos atendimentos é impressionante.'
     },
     {
       name: 'Lilian Daniele',
       role: 'Supervisora de Atendimento',
       company: 'Persiga',
+      image: '/persiga.png',
       text: 'A integração com diferentes canais e o CRM Kanban tornaram nosso atendimento muito mais eficiente. Recomendo fortemente!'
     }
   ]
@@ -37,8 +41,13 @@ const TestimonialsSection = () => {
               className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#213365] to-[#eb594c] flex items-center justify-center text-white text-2xl font-bold mr-4">
-                  {testimonial.name.charAt(0)}
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 relative">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-[#213365]">{testimonial.name}</h3>
