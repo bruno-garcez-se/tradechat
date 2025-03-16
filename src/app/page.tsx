@@ -197,7 +197,15 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Kanzap</h3>
+              <div className="mb-4">
+                <Image
+                  src="/logorodape.png"
+                  alt="Kanzap"
+                  width={180}
+                  height={54}
+                  className="w-auto h-12"
+                />
+              </div>
               <p className="text-gray-400">
                 Sua solução completa para atendimento multicanal via WhatsApp.
               </p>
