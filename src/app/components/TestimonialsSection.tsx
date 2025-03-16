@@ -5,21 +5,21 @@ import React from 'react'
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: 'Ana Silva',
-      role: 'Gerente de Marketing',
-      company: 'Agência Digital',
+      name: 'Louise Helen',
+      role: 'Escrevente',
+      company: 'Cartório 1º Ofício',
       text: 'O Kanzap revolucionou nossa forma de atender clientes. A organização e eficiência melhoraram drasticamente, e nossos clientes notaram a diferença!'
     },
     {
-      name: 'Carlos Santos',
+      name: 'Rafael',
       role: 'Proprietário',
-      company: 'Loja de Roupas Online',
+      company: 'Agência R2',
       text: 'Desde que começamos a usar o Kanzap, nossas vendas aumentaram em 40%. A facilidade de gerenciar múltiplos atendimentos é impressionante.'
     },
     {
-      name: 'Mariana Costa',
+      name: 'Lilian Daniele',
       role: 'Supervisora de Atendimento',
-      company: 'E-commerce',
+      company: 'Persiga',
       text: 'A integração com diferentes canais e o CRM Kanban tornaram nosso atendimento muito mais eficiente. Recomendo fortemente!'
     }
   ]
