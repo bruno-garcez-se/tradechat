@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import PricingSection from './components/PricingSection'
@@ -8,8 +8,11 @@ import FeaturesSection from './components/FeaturesSection'
 import Header from './components/Header'
 import TestimonialsSection from './components/TestimonialsSection'
 import DemoScheduler from './components/DemoScheduler'
+import ScheduleModal from './components/ScheduleModal'
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <main className="flex min-h-screen flex-col">
       <Header />
@@ -168,14 +171,18 @@ export default function Home() {
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-3xl mx-auto mb-12">
             <h2 className="text-4xl font-bold text-white mb-8 leading-tight">
-              Agende uma demonstração gratuita
+              Transforme seu atendimento com o Kanzap
             </h2>
-            <p className="text-white/90 text-lg mb-8">
-              Descubra como o Kanzap pode transformar o atendimento da sua empresa
+            <p className="text-white/90 text-lg mb-12">
+              Agende uma demonstração gratuita e descubra como podemos ajudar sua empresa a crescer
             </p>
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="inline-block bg-white text-[#213365] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#eb594c] hover:text-white transition-all duration-300 hover:scale-105 transform shadow-lg"
+            >
+              Agendar Demonstração
+            </button>
           </div>
-
-          <DemoScheduler />
         </div>
 
         {/* Efeito de Ondas */}
@@ -231,6 +238,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Modal de Agendamento */}
+      <ScheduleModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   )
 } 

@@ -14,12 +14,12 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json()
-    console.log('Dados recebidos:', { ...body, email: '***' }) // Ocultando email por segurança
+    console.log('Dados recebidos:', body)
 
-    const { name, email, phone, company, preferredDate, preferredTime } = body
+    const { name, phone, preferredDate, preferredTime } = body
 
     // Validação dos dados
-    if (!name || !email || !phone || !company || !preferredDate || !preferredTime) {
+    if (!name || !phone || !preferredDate || !preferredTime) {
       return NextResponse.json(
         { error: 'Todos os campos são obrigatórios' },
         { status: 400 }
@@ -44,12 +44,10 @@ export async function POST(request: Request) {
     console.log('Criando evento para:', dateTime.toISOString())
 
     const event = {
-      summary: `Demonstração Kanzap - ${company}`,
+      summary: `Demonstração Kanzap - ${name}`,
       description: `
         Nome: ${name}
-        Email: ${email}
         Telefone: ${phone}
-        Empresa: ${company}
       `,
       start: {
         dateTime: dateTime.toISOString(),
@@ -60,7 +58,6 @@ export async function POST(request: Request) {
         timeZone: 'America/Sao_Paulo',
       },
       attendees: [
-        { email },
         { email: process.env.GOOGLE_CALENDAR_EMAIL },
       ],
       conferenceData: {
