@@ -109,7 +109,7 @@ export default function Home() {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm5.144 14.5h-10.288c-.472 0-.856-.384-.856-.857v-7.286c0-.473.384-.857.856-.857h10.288c.472 0 .856.384.856.857v7.286c0 .473-.384.857-.856.857z"/>
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm5.144 14.5h-10.288c-.472 0-.856-.384-.856-.857v-7.286c0-.473.384-.857.856-.857h10.288c.472 0 .856.384.857v7.286c0 .473-.384.857-.856.857z"/>
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-[#213365]">Web Chat</h3>
@@ -219,7 +219,6 @@ export default function Home() {
               <ul className="space-y-2">
                 <li><Link href="/sobre" className="text-gray-400 hover:text-[#eb594c]">Sobre nós</Link></li>
                 <li><Link href="/contato" className="text-gray-400 hover:text-[#eb594c]">Contato</Link></li>
-                <li><Link href="#blog" className="text-gray-400 hover:text-[#eb594c]">Blog</Link></li>
               </ul>
             </div>
             <div>
