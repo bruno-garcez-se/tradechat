@@ -272,7 +272,7 @@ export default function FeaturesSection() {
                 onClick={() => handleTabClick(key)}
                 className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeTab === key
-                    ? 'bg-[#213365] text-white shadow-lg'
+                    ? 'bg-[#eb594c] text-white shadow-lg'
                     : 'bg-white text-gray-600 hover:bg-gray-50'
                 }`}
               >
