@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-6xl font-bold text-[#213365] mb-6">
-                Revolucione seu atendimento com o <span className="text-white">Kanzap</span>
+                Revolucione seu atendimento com o Kanzap
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Gerencie múltiplos atendimentos pelo WhatsApp de forma profissional e eficiente. Aumente suas vendas e satisfação dos clientes.
@@ -231,7 +231,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-            <p className="text-gray-400">&copy; {new Date().getFullYear()} <span className="text-[#213365]">Kanzap</span>. Todos os direitos reservados.</p>
+            <p className="text-gray-400">&copy; {new Date().getFullYear()} Kanzap. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
