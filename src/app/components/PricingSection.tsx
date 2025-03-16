@@ -5,10 +5,21 @@ import Link from 'next/link'
 
 const PricingSection = () => {
   return (
-    <section id="precos" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-16">Planos e Preços</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section id="precos" className="py-20 bg-gradient-to-br from-[#213365]/5 via-white to-[#eb594c]/5 relative">
+      {/* Efeito de fundo */}
+      <div className="absolute inset-0 bg-[url('/wave.svg')] bg-repeat opacity-5"></div>
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
+            Planos e <span className="text-[#eb594c]">Preços</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Escolha o plano ideal para o seu negócio crescer
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {/* Plano Básico */}
           <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Básico</h3>

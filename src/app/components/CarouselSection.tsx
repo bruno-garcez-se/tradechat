@@ -104,11 +104,11 @@ export default function CarouselSection() {
     <section className="py-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#213365] mb-4">
-            Integração Multicanal
+          <h2 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
+            Integração <span className="text-[#eb594c]">Multicanal</span>
           </h2>
-          <p className="text-xl text-gray-600">
-            Centralize todas as suas conversas em um único lugar
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Centralize todas as suas conversas em uma única plataforma
           </p>
         </div>
 

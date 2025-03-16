@@ -5,18 +5,21 @@ import Image from 'next/image'
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-gradient-to-br from-[#213365]/5 via-white to-[#eb594c]/5 relative">
+      {/* Efeito de fundo */}
+      <div className="absolute inset-0 bg-[url('/wave.svg')] bg-repeat opacity-5"></div>
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#213365] mb-4">
-            O que nossos clientes dizem
+          <h2 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
+            O que nossos <span className="text-[#eb594c]">clientes</span> dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Empresas que transformaram seu atendimento com o Kanzap
+            Descubra como o Kanzap está transformando empresas por todo o Brasil
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex items-start mb-6">
               <div className="w-[70px] h-[70px] relative rounded-full overflow-hidden bg-white flex items-center justify-center">
