@@ -83,7 +83,7 @@ const PricingSection = () => {
                 API de Integração
               </li>
             </ul>
-            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951]">
+            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#eb594c] transition-colors duration-300">
               Começar Agora
             </Link>
           </div>
@@ -165,7 +165,7 @@ const PricingSection = () => {
                 API de Integração
               </li>
             </ul>
-            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951]">
+            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#eb594c] transition-colors duration-300">
               Começar Agora
             </Link>
           </div>
@@ -241,7 +241,7 @@ const PricingSection = () => {
                 API de Integração
               </li>
             </ul>
-            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#1a2951]">
+            <Link href="https://app.kanzap.com.br/#/signup" className="block text-center bg-[#213365] text-white py-3 px-6 rounded-full hover:bg-[#eb594c] transition-colors duration-300">
               Começar Agora
             </Link>
           </div>
