@@ -1,11 +1,11 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kanzap - Atendimento Multicanal via WhatsApp',
+  title: 'Kanzap - Revolucione seu atendimento com WhatsApp',
   description: 'Gerencie múltiplos atendimentos pelo WhatsApp de forma profissional e eficiente. Aumente suas vendas e satisfação dos clientes.',
   icons: {
     icon: [
@@ -44,8 +44,12 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+export const viewport: Viewport = {
   themeColor: '#213365',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
