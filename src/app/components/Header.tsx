@@ -23,64 +23,68 @@ export default function Header() {
               />
             </Link>
           </div>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <Link href="/#recursos" className="text-gray-600 hover:text-[#eb594c] relative group">
-              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1">
+              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1 font-semibold">
                 Recursos
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#eb594c] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
               </span>
             </Link>
             <Link href="/#precos" className="text-gray-600 hover:text-[#eb594c] relative group">
-              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1">
+              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1 font-semibold">
                 Planos
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#eb594c] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
               </span>
             </Link>
             <Link href="/sobre" className="text-gray-600 hover:text-[#eb594c] relative group">
-              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1">
+              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1 font-semibold">
                 Sobre
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#eb594c] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
               </span>
             </Link>
             <Link href="/contato" className="text-gray-600 hover:text-[#eb594c] relative group">
-              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1">
+              <span className="relative inline-block transform transition-transform duration-300 group-hover:-translate-y-1 font-semibold">
                 Contato
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#eb594c] transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
               </span>
             </Link>
           </div>
-          <div className="flex items-center space-x-4">
-            <div className="hidden md:block">
-              <Link
-                href="https://app.kanzap.com.br/#/login"
-                className="bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#eb594c] hover:scale-105 transform transition-all duration-300"
+          <div className="hidden md:flex items-center space-x-4">
+            <Link
+              href="https://app.kanzap.com.br/#/signup"
+              className="bg-[#eb594c] text-white px-6 py-2 rounded-full hover:bg-[#213365] hover:scale-105 transform transition-all duration-300"
+            >
+              Teste Grátis
+            </Link>
+            <Link
+              href="https://app.kanzap.com.br/#/login"
+              className="bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#eb594c] hover:scale-105 transform transition-all duration-300"
+            >
+              Entrar
+            </Link>
+          </div>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-600 hover:text-[#eb594c] focus:outline-none transition-colors duration-300"
+              aria-label="Menu"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                Entrar
-              </Link>
-            </div>
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-600 hover:text-[#eb594c] focus:outline-none transition-colors duration-300"
-                aria-label="Menu"
-              >
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {isOpen ? (
-                    <path d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path d="M4 6h16M4 12h16M4 18h16" />
-                  )}
-                </svg>
-              </button>
-            </div>
+                {isOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -89,31 +93,38 @@ export default function Header() {
             <div className="px-4 py-3 space-y-3">
               <Link
                 href="/#recursos"
-                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300"
+                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300 font-semibold"
                 onClick={() => setIsOpen(false)}
               >
                 Recursos
               </Link>
               <Link
                 href="/#precos"
-                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300"
+                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300 font-semibold"
                 onClick={() => setIsOpen(false)}
               >
                 Planos
               </Link>
               <Link
                 href="/sobre"
-                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300"
+                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300 font-semibold"
                 onClick={() => setIsOpen(false)}
               >
                 Sobre
               </Link>
               <Link
                 href="/contato"
-                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300"
+                className="block text-gray-600 hover:text-[#eb594c] py-2 transform hover:translate-x-2 transition-transform duration-300 font-semibold"
                 onClick={() => setIsOpen(false)}
               >
                 Contato
+              </Link>
+              <Link
+                href="https://app.kanzap.com.br/#/signup"
+                className="block bg-[#eb594c] text-white px-6 py-2 rounded-full hover:bg-[#213365] hover:scale-105 transform transition-all duration-300 text-center mb-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Teste Grátis
               </Link>
               <Link
                 href="https://app.kanzap.com.br/#/login"
