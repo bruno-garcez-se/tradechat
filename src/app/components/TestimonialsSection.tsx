@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 export default function TestimonialsSection() {
   return (
@@ -15,53 +16,71 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <blockquote className="text-gray-600 mb-4 italic">
-              "O Kanzap revolucionou nosso atendimento ao cliente. A produtividade da equipe aumentou em 70% e nossos clientes estão muito mais satisfeitos com o tempo de resposta."
-            </blockquote>
-            <div className="flex items-center">
-              <div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex items-start mb-6">
+              <div className="w-[70px] h-[70px] relative rounded-full overflow-hidden bg-white flex items-center justify-center">
+                <Image
+                  src="/cart.png"
+                  alt="Cartório Logo"
+                  width={70}
+                  height={70}
+                  className="object-contain scale-110"
+                />
+              </div>
+              <div className="ml-4">
                 <p className="font-semibold text-[#213365]">Louise Helen</p>
-                <p className="text-gray-600">Gerente de Marketing - Tech Solutions</p>
+                <p className="text-gray-500 text-sm">Escrevente</p>
+                <p className="text-[#eb594c] text-sm">Cartório 1º Ofício</p>
               </div>
             </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <blockquote className="text-gray-600 mb-4 italic">
-              "Desde que implementamos o Kanzap, nossas vendas aumentaram 45%. A facilidade de gerenciar múltiplos atendimentos e a integração com nosso e-commerce fez toda diferença."
+            <blockquote className="text-gray-600 italic">
+              "O Kanzap revolucionou nossa forma de atender clientes. A organização e eficiência melhoraram drasticamente, e nossos clientes notaram a diferença!"
             </blockquote>
-            <div className="flex items-center">
-              <div>
-                <p className="font-semibold text-[#213365]">Rafael</p>
-                <p className="text-gray-600">CEO - Delivery Express</p>
-              </div>
-            </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <blockquote className="text-gray-600 mb-4 italic">
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex items-start mb-6">
+              <div className="w-[70px] h-[70px] relative rounded-full overflow-hidden bg-white flex items-center justify-center">
+                <Image
+                  src="/r2.png"
+                  alt="Delivery Express Logo"
+                  width={70}
+                  height={70}
+                  className="object-contain scale-110"
+                />
+              </div>
+              <div className="ml-4">
+                <p className="font-semibold text-[#213365]">Rafael Santos</p>
+                <p className="text-gray-500 text-sm">Proprietário</p>
+                <p className="text-[#eb594c] text-sm">Agência R2</p>
+              </div>
+            </div>
+            <blockquote className="text-gray-600 italic">
+              "O Kanzap transformou nossa comunicação com os clientes. A facilidade de gerenciar múltiplos atendimentos e a integração com nossas redes sociais otimizou nossos resultados."
+            </blockquote>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex items-start mb-6">
+              <div className="w-[70px] h-[70px] relative rounded-full overflow-hidden bg-white flex items-center justify-center">
+                <Image
+                  src="/persiga.png"
+                  alt="Beauty Care Logo"
+                  width={70}
+                  height={70}
+                  className="object-contain scale-110"
+                />
+              </div>
+              <div className="ml-4">
+                <p className="font-semibold text-[#213365]">Lilian Daniele</p>
+                <p className="text-gray-500 text-sm">Sócia/Contadora</p>
+                <p className="text-[#eb594c] text-sm">Persiga Contabilidade</p>
+              </div>
+            </div>
+            <blockquote className="text-gray-600 italic">
               "Os relatórios detalhados e a possibilidade de ter vários atendentes nos ajudou a melhorar nossos processos. O suporte é excelente e sempre nos ajuda quando precisamos."
             </blockquote>
-            <div className="flex items-center">
-              <div>
-                <p className="font-semibold text-[#213365]">Lilian Daniele</p>
-                <p className="text-gray-600">Supervisora de Atendimento - Beauty Care</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <blockquote className="text-gray-600 mb-4 italic">
-              "A automação de respostas e o chatbot nos ajudaram a reduzir em 50% o tempo de atendimento. Nossos clientes adoram a rapidez e praticidade."
-            </blockquote>
-            <div className="flex items-center">
-              <div>
-                <p className="font-semibold text-[#213365]">Rafael</p>
-                <p className="text-gray-600">Diretor Comercial - Mega Store</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

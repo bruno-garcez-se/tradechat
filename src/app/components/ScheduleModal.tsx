@@ -1,6 +1,6 @@
 'use client'
 
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
 interface ScheduleModalProps {
@@ -9,6 +9,48 @@ interface ScheduleModalProps {
 }
 
 export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('/api/schedule-demo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) throw new Error('Falha ao agendar demonstração')
+      
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', phone: '' })
+      setTimeout(() => {
+        onClose()
+        setSubmitStatus('idle')
+      }, 2000)
+    } catch (error) {
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose}>
@@ -35,78 +77,87 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-8 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
-                  className="text-lg font-medium leading-6 text-gray-900"
+                  className="text-2xl font-bold text-[#213365] mb-2"
                 >
                   Agendar Demonstração
                 </Dialog.Title>
                 <div className="mt-2">
-                  <p className="text-sm text-gray-500">
-                    Preencha o formulário abaixo para agendar uma demonstração gratuita do Kanzap.
+                  <p className="text-gray-600">
+                    Agende uma demonstração gratuita e descubra como o Kanzap pode transformar seu atendimento
                   </p>
                 </div>
 
-                <form className="mt-4 space-y-4">
+                <form onSubmit={handleSubmit} className="mt-6 space-y-5">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                      Nome
+                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-1">
+                      Nome completo
                     </label>
                     <input
                       type="text"
                       name="name"
                       id="name"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#213365] focus:ring-[#213365] sm:text-sm"
-                      placeholder="Seu nome completo"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#213365] focus:ring-2 focus:ring-[#213365]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
+                      placeholder="Digite seu nome"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                      Email
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1">
+                      E-mail
                     </label>
                     <input
                       type="email"
                       name="email"
                       id="email"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#213365] focus:ring-[#213365] sm:text-sm"
-                      placeholder="seu@email.com"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#213365] focus:ring-2 focus:ring-[#213365]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
+                      placeholder="Digite seu e-mail"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                      Telefone
+                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-1">
+                      WhatsApp
                     </label>
                     <input
                       type="tel"
                       name="phone"
                       id="phone"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#213365] focus:ring-[#213365] sm:text-sm"
+                      required
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#213365] focus:ring-2 focus:ring-[#213365]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
                       placeholder="(00) 00000-0000"
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700">
-                      Empresa
-                    </label>
-                    <input
-                      type="text"
-                      name="company"
-                      id="company"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#213365] focus:ring-[#213365] sm:text-sm"
-                      placeholder="Nome da sua empresa"
-                    />
-                  </div>
+                  {submitStatus === 'error' && (
+                    <p className="text-red-500 text-sm">
+                      Ocorreu um erro ao agendar. Por favor, tente novamente.
+                    </p>
+                  )}
 
-                  <div className="mt-6">
+                  {submitStatus === 'success' && (
+                    <p className="text-green-500 text-sm">
+                      Demonstração agendada com sucesso! Entraremos em contato em breve.
+                    </p>
+                  )}
+
+                  <div className="mt-8">
                     <button
                       type="submit"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-[#213365] px-4 py-2 text-sm font-medium text-white hover:bg-[#eb594c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#213365] focus-visible:ring-offset-2"
+                      disabled={isSubmitting}
+                      className="w-full flex items-center justify-center px-8 py-4 rounded-xl bg-[#213365] text-white font-semibold hover:bg-[#eb594c] transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Agendar
+                      {isSubmitting ? 'Agendando...' : 'Agendar Demonstração'}
                     </button>
                   </div>
                 </form>

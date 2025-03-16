@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 mt-12 md:mt-0 flex justify-center items-center relative">
               <Image
-                src="/hero-social.png"
+                src="/hero-social.png.png"
                 alt="Kanzap Hero"
                 width={425}
                 height={500}
@@ -183,7 +183,7 @@ export default function Home() {
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="max-w-3xl mx-auto mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-white/90">
-              Transforme seu atendimento com o Kanzap
+              Transforme seu atendimento com o <span className="text-[#eb594c]">Kanzap</span>
             </h2>
             <p className="text-white/90 text-lg md:text-xl mb-12 leading-relaxed">
               Agende uma demonstração gratuita e descubra como podemos ajudar sua empresa a crescer

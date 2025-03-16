@@ -38,7 +38,7 @@ export default function FeaturesSection() {
         </svg>
       ),
       title: 'Agendamento Automático',
-      description: 'Permita que seus clientes agendem serviços diretamente pelo WhatsApp com confirmação automática.'
+      description: 'Programe suas mensagens para serem enviadas no melhor momento. Agende comunicações importantes e mantenha seu público sempre informado.'
     },
     {
       icon: (
@@ -61,11 +61,11 @@ export default function FeaturesSection() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z M12 19l9 2-2-9" />
         </svg>
       ),
-      title: 'Pagamentos Integrados',
-      description: 'Envie cobranças e receba pagamentos diretamente pelo WhatsApp com as principais formas de pagamento.'
+      title: 'Disparos em massa',
+      description: 'Envie mensagens em massa para seus contatos de forma organizada e profissional. Alcance seu público-alvo com campanhas personalizadas.'
     },
     {
       icon: (
@@ -74,7 +74,7 @@ export default function FeaturesSection() {
         </svg>
       ),
       title: 'Integrações',
-      description: 'Conecte com suas ferramentas favoritas como Shopify, WooCommerce, Hotmart e muito mais.'
+      description: 'Conecte com suas ferramentas favoritas como Facebook Messenger, Instagram, Mercado Livre e muito mais.'
     }
   ]
 
