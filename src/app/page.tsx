@@ -146,7 +146,7 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-              <h3 className="text-xl font-bold text-[#eb594c] mb-4">Kanzap</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Kanzap</h3>
               <p className="text-gray-400">
                 Sua solução completa para atendimento multicanal via WhatsApp.
               </p>
