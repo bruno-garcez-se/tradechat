@@ -19,7 +19,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-6xl font-bold text-[#213365] mb-6">
-                Revolucione seu atendimento com o Kanzap
+                Revolucione seu atendimento com o <span className="text-white">Kanzap</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Gerencie múltiplos atendimentos pelo WhatsApp de forma profissional e eficiente. Aumente suas vendas e satisfação dos clientes.
