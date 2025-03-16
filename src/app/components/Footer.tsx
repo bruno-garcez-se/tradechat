@@ -13,9 +13,9 @@ export default function Footer() {
               <Image
                 src="/logorodape.png"
                 alt="Kanzap"
-                width={120}
-                height={36}
-                className="w-auto h-9"
+                width={180}
+                height={54}
+                className="w-auto h-12"
               />
             </div>
             <p className="text-gray-400">
@@ -23,31 +23,30 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Produto</h4>
+            <h4 className="text-lg font-semibold text-[#eb594c] mb-4">Produto</h4>
             <ul className="space-y-2">
-              <li><Link href="/#recursos" className="text-gray-400 hover:text-[#eb594c]">Recursos</Link></li>
-              <li><Link href="/#precos" className="text-gray-400 hover:text-[#eb594c]">Planos</Link></li>
-              <li><Link href="/#demo" className="text-gray-400 hover:text-[#eb594c]">Demonstração</Link></li>
+              <li><Link href="#recursos" className="text-gray-400 hover:text-[#eb594c]">Recursos</Link></li>
+              <li><Link href="#precos" className="text-gray-400 hover:text-[#eb594c]">Planos</Link></li>
+              <li><Link href="#demo" className="text-gray-400 hover:text-[#eb594c]">Demonstração</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Empresa</h4>
+            <h4 className="text-lg font-semibold text-[#eb594c] mb-4">Empresa</h4>
             <ul className="space-y-2">
               <li><Link href="/sobre" className="text-gray-400 hover:text-[#eb594c]">Sobre nós</Link></li>
               <li><Link href="/contato" className="text-gray-400 hover:text-[#eb594c]">Contato</Link></li>
-              <li><Link href="/#blog" className="text-gray-400 hover:text-[#eb594c]">Blog</Link></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Legal</h4>
+            <h4 className="text-lg font-semibold text-[#eb594c] mb-4">Legal</h4>
             <ul className="space-y-2">
               <li><Link href="/privacidade" className="text-gray-400 hover:text-[#eb594c]">Privacidade</Link></li>
               <li><Link href="/termos" className="text-gray-400 hover:text-[#eb594c]">Termos de Uso</Link></li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Kanzap. Todos os direitos reservados.</p>
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} Kanzap. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
