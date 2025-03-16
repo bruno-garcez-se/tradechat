@@ -70,7 +70,7 @@ export default function SobrePage() {
             <div className="text-center">
               <Link
                 href="https://app.kanzap.com.br/#/signup"
-                className="bg-[#213365] text-white px-8 py-3 rounded-full hover:bg-[#1a2951] inline-block"
+                className="bg-[#213365] text-white px-8 py-3 rounded-full hover:bg-[#eb594c] transition-colors duration-300 inline-block"
               >
                 Comece Agora
               </Link>

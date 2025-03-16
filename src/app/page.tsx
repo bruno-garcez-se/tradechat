@@ -24,10 +24,10 @@ export default function Home() {
                 Gerencie múltiplos atendimentos pelo WhatsApp de forma profissional e eficiente. Aumente suas vendas e satisfação dos clientes.
               </p>
               <div className="flex space-x-4">
-                <Link href="https://app.kanzap.com.br/#/signup" className="bg-[#213365] text-white px-8 py-3 rounded-full hover:bg-[#1a2951]">
+                <Link href="https://app.kanzap.com.br/#/signup" className="bg-[#213365] text-white px-8 py-3 rounded-full hover:bg-[#eb594c] transition-colors duration-300">
                   Teste Grátis por 7 dias
                 </Link>
-                <Link href="#precos" className="border-2 border-[#213365] text-[#213365] px-8 py-3 rounded-full hover:bg-[#213365]/5">
+                <Link href="#precos" className="border-2 border-[#213365] text-[#213365] px-8 py-3 rounded-full hover:bg-[#eb594c] hover:border-[#eb594c] hover:text-white transition-colors duration-300">
                   Ver Planos
                 </Link>
               </div>
@@ -59,7 +59,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-white mb-8">
             Comece agora mesmo a transformar seu atendimento
           </h2>
-          <Link href="https://app.kanzap.com.br/#/signup" className="bg-white text-[#213365] px-8 py-3 rounded-full hover:bg-gray-100 inline-block">
+          <Link href="https://app.kanzap.com.br/#/signup" className="bg-white text-[#213365] px-8 py-3 rounded-full hover:bg-[#eb594c] hover:text-white transition-colors duration-300">
             Começar Agora
           </Link>
         </div>

@@ -41,7 +41,7 @@ export default function Header() {
             <div className="hidden md:block">
               <Link
                 href="https://app.kanzap.com.br/#/login"
-                className="bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#1a2951]"
+                className="bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#eb594c] transition-colors duration-300"
               >
                 Entrar
               </Link>
@@ -105,7 +105,7 @@ export default function Header() {
               </Link>
               <Link
                 href="https://app.kanzap.com.br/#/login"
-                className="block bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#1a2951] text-center"
+                className="block bg-[#213365] text-white px-6 py-2 rounded-full hover:bg-[#eb594c] transition-colors duration-300 text-center"
                 onClick={() => setIsOpen(false)}
               >
                 Entrar
