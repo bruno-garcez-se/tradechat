@@ -89,9 +89,9 @@ const PricingSection = () => {
           </div>
 
           {/* Plano Profissional */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-[#213365] transform scale-105">
+          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-[#eb594c] transform scale-105 relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span className="bg-[#213365] text-white px-4 py-1 rounded-full text-sm">Mais Popular</span>
+              <span className="bg-[#eb594c] text-white px-4 py-1 rounded-full text-sm">Mais Popular</span>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Profissional</h3>
             <p className="text-4xl font-bold text-[#213365] mb-6">
