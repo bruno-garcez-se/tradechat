@@ -6,6 +6,7 @@ import Link from 'next/link'
 import PricingSection from './components/PricingSection'
 import FeaturesSection from './components/FeaturesSection'
 import Header from './components/Header'
+import TestimonialsSection from './components/TestimonialsSection'
 
 export default function Home() {
   return (
@@ -64,6 +65,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
