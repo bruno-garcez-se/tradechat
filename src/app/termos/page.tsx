@@ -6,114 +6,165 @@ export default function TermosPage() {
     <main className="flex min-h-screen flex-col">
       <Header />
 
-      <section className="flex-grow pt-24 pb-20 bg-gradient-to-r from-[#213365]/5 to-[#eb594c]/5">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#213365] mb-4">
-              Termos de Uso
+      <section className="flex-grow pt-24 pb-20 bg-gradient-to-br from-[#213365]/5 via-white to-[#eb594c]/5 relative">
+        {/* Efeito de fundo */}
+        <div className="absolute inset-0 bg-[url('/wave.svg')] bg-repeat opacity-5"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
+              Termos de <span className="text-[#eb594c]">Uso</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Última atualização: {new Date().toLocaleDateString('pt-BR')}
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Leia atentamente os termos e condições de uso da nossa plataforma
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="p-8 md:p-12">
-                <div className="prose prose-lg max-w-none prose-headings:text-[#213365] prose-a:text-[#eb594c] prose-a:no-underline hover:prose-a:underline">
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>1. Aceitação dos Termos</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Ao acessar e usar o Kanzap, você concorda em cumprir e estar vinculado aos seguintes termos e condições de uso.
-                    Se você não concordar com qualquer parte destes termos, não poderá usar nossos serviços.
-                  </p>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Aceitação dos Termos
+              </h2>
+              <p className="text-gray-600">
+                Ao acessar e usar o Kanzap, você concorda em cumprir estes termos de uso. 
+                Se você não concordar com qualquer parte destes termos, não poderá usar nossos serviços.
+              </p>
+            </div>
 
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>2. Descrição do Serviço</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    O Kanzap é uma plataforma de atendimento multicanal via WhatsApp que permite às empresas gerenciar suas comunicações
-                    com clientes de forma profissional e eficiente.
-                  </p>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Uso do Serviço
+              </h2>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Você deve ter pelo menos 18 anos para usar o serviço
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Você é responsável por manter a confidencialidade de sua conta
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  O uso do serviço deve estar em conformidade com todas as leis aplicáveis
+                </li>
+              </ul>
+            </div>
 
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>3. Conta do Usuário</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Para usar o Kanzap, você precisa criar uma conta. Você é responsável por manter a confidencialidade de sua conta
-                    e senha e por restringir o acesso ao seu computador.
-                  </p>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Assinatura e Pagamentos
+              </h2>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Os preços e planos estão sujeitos a alterações
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Cobranças são feitas mensalmente ou anualmente, conforme o plano escolhido
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Reembolsos seguem nossa política específica
+                </li>
+              </ul>
+            </div>
 
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>4. Uso Aceitável</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Você concorda em usar o Kanzap apenas para fins legais e de acordo com estes termos. Você não deve usar o serviço
-                    para enviar spam, conteúdo ilegal ou prejudicial.
-                  </p>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Propriedade Intelectual
+              </h2>
+              <p className="text-gray-600 mb-4">
+                Todo o conteúdo do Kanzap, incluindo mas não limitado a:
+              </p>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Logotipos, marcas e designs
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Software e código-fonte
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Textos e materiais visuais
+                </li>
+              </ul>
+              <p className="text-gray-600 mt-4">
+                São de propriedade exclusiva do Kanzap e protegidos por leis de propriedade intelectual.
+              </p>
+            </div>
 
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>5. Privacidade</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Seu uso do Kanzap é também governado por nossa Política de Privacidade, que pode ser encontrada em
-                    /privacidade.
-                  </p>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Limitação de Responsabilidade
+              </h2>
+              <p className="text-gray-600 mb-4">
+                O Kanzap não se responsabiliza por:
+              </p>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Interrupções ou erros no serviço
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Perda de dados ou danos indiretos
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-[#eb594c] mr-2 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Ações de terceiros
+                </li>
+              </ul>
+            </div>
 
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>6. Limitação de Responsabilidade</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    O Kanzap não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequentes
-                    resultantes do uso ou da incapacidade de usar nossos serviços.
-                  </p>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Modificações dos Termos
+              </h2>
+              <p className="text-gray-600">
+                O Kanzap reserva-se o direito de modificar estes termos a qualquer momento. 
+                Alterações significativas serão notificadas através de nosso site ou por e-mail. 
+                O uso continuado do serviço após as alterações constitui aceitação dos novos termos.
+              </p>
+            </div>
 
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>7. Modificações do Serviço</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Reservamo-nos o direito de modificar ou descontinuar, temporária ou permanentemente, o serviço com ou sem aviso
-                    prévio.
-                  </p>
-
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>8. Rescisão</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Podemos encerrar ou suspender seu acesso imediatamente, sem aviso prévio ou responsabilidade, por qualquer
-                    motivo, incluindo, sem limitação, se você violar os Termos.
-                  </p>
-
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>9. Lei Aplicável</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed mb-8">
-                    Estes termos serão regidos e interpretados de acordo com as leis do Brasil, sem considerar seus conflitos
-                    de disposições legais.
-                  </p>
-
-                  <h2 className="flex items-center space-x-2 text-2xl font-semibold text-[#213365] mb-6">
-                    <span className="inline-block w-8 h-8 bg-[#213365] rounded-full opacity-10"></span>
-                    <span>10. Contato</span>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco em{' '}
-                    <a href="mailto:kanzapinc@gmail.com" className="text-[#eb594c] hover:underline">
-                      kanzapinc@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </div>
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <h2 className="text-2xl font-semibold text-[#213365] mb-4">
+                Contato
+              </h2>
+              <p className="text-gray-600">
+                Para questões relacionadas aos termos de uso, entre em contato através do e-mail: 
+                <a href="mailto:kanzapinc@gmail.com" className="text-[#eb594c] hover:underline ml-1">
+                  kanzapinc@gmail.com
+                </a>
+              </p>
             </div>
           </div>
         </div>

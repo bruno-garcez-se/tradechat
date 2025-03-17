@@ -12,7 +12,7 @@ export default function CarouselSection() {
   const integrations = [
     {
       title: 'CRM WhatsApp',
-      description: 'Gerencie todas as conversas do WhatsApp em uma única plataforma. Organize, responda e acompanhe o histórico completo dos seus clientes.',
+      description: 'Gerencie todas as conversas do WhatsApp em uma única plataforma. Organize e acompanhe o histórico dos seus clientes.',
       icon: (
         <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -24,7 +24,7 @@ export default function CarouselSection() {
     },
     {
       title: 'Facebook Messenger',
-      description: 'Automatize respostas para as dúvidas mais comuns dos seus clientes no Messenger. Mantenha um atendimento ágil e eficiente.',
+      description: 'Automatize respostas para as dúvidas mais comuns dos seus clientes no Messenger. Atendimento ágil e eficiente.',
       icon: (
         <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -36,7 +36,7 @@ export default function CarouselSection() {
     },
     {
       title: 'Instagram Direct',
-      description: 'Monitore e responda todas as mensagens do Direct em tempo real. Seus consultores terão acesso a todas as conversas em um só lugar.',
+      description: 'Monitore e responda todas as mensagens do Direct em tempo real. Acesso a todas as conversas em um só lugar.',
       icon: (
         <div className="w-12 h-12 bg-gradient-to-tr from-purple-600 to-pink-500 rounded-full flex items-center justify-center mr-4">
           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -48,7 +48,7 @@ export default function CarouselSection() {
     },
     {
       title: 'Web Chat',
-      description: 'Integre nosso chat diretamente no seu site. Ofereça atendimento instantâneo e profissional aos visitantes da sua página.',
+      description: 'Integre nosso chat diretamente no seu site. Ofereça atendimento instantâneo aos visitantes da sua página.',
       icon: (
         <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center mr-4">
           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -60,7 +60,7 @@ export default function CarouselSection() {
     },
     {
       title: 'Telegram',
-      description: 'Integre o Telegram ao seu atendimento. Gerencie mensagens e grupos do Telegram de forma profissional e organizada.',
+      description: 'Integre o Telegram ao seu atendimento. Gerencie mensagens e grupos de forma profissional e organizada.',
       icon: (
         <div className="w-12 h-12 bg-[#0088cc] rounded-full flex items-center justify-center mr-4">
           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -72,7 +72,7 @@ export default function CarouselSection() {
     },
     {
       title: 'E-mail',
-      description: 'Integre seu e-mail corporativo e gerencie todas as comunicações por e-mail na mesma plataforma. Mantenha um histórico completo das conversas.',
+      description: 'Integre seu e-mail corporativo e gerencie todas as comunicações na mesma plataforma. Histórico completo das conversas.',
       icon: (
         <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
           <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
@@ -84,7 +84,7 @@ export default function CarouselSection() {
     },
     {
       title: 'Mercado Livre',
-      description: 'Gerencie suas mensagens do Mercado Livre diretamente na plataforma. Acompanhe pedidos e interaja com compradores de forma eficiente.',
+      description: 'Gerencie suas mensagens do Mercado Livre diretamente na plataforma. Acompanhe pedidos e interaja com compradores.',
       icon: (
         <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mr-4 overflow-hidden">
           <Image

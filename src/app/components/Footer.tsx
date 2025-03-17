@@ -2,8 +2,12 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState } from 'react'
+import ScheduleModal from './ScheduleModal'
 
 export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
@@ -27,7 +31,14 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/#recursos" className="text-gray-400 hover:text-[#eb594c] transition-colors">Recursos</Link></li>
               <li><Link href="/#precos" className="text-gray-400 hover:text-[#eb594c] transition-colors">Planos</Link></li>
-              <li><Link href="/#demo" className="text-gray-400 hover:text-[#eb594c] transition-colors">Demonstração</Link></li>
+              <li>
+                <button 
+                  onClick={() => setIsModalOpen(true)}
+                  className="text-gray-400 hover:text-[#eb594c] transition-colors cursor-pointer"
+                >
+                  Demonstração
+                </button>
+              </li>
             </ul>
           </div>
           <div>
@@ -42,6 +53,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/privacidade" className="text-gray-400 hover:text-[#eb594c] transition-colors">Privacidade</Link></li>
               <li><Link href="/termos" className="text-gray-400 hover:text-[#eb594c] transition-colors">Termos de Uso</Link></li>
+              <li><Link href="/lgpd" className="text-gray-400 hover:text-[#eb594c] transition-colors">LGPD</Link></li>
             </ul>
           </div>
         </div>
@@ -49,6 +61,9 @@ export default function Footer() {
           <p className="text-gray-400">&copy; {new Date().getFullYear()} Kanzap. Todos os direitos reservados.</p>
         </div>
       </div>
+
+      {/* Modal de Agendamento */}
+      <ScheduleModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </footer>
   )
 }

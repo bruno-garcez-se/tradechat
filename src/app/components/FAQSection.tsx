@@ -25,7 +25,7 @@ export default function FAQSection() {
     },
     {
       question: 'Como funcionam as integrações com outras plataformas?',
-      answer: 'O Kanzap oferece integrações nativas com diversas plataformas como Facebook Messenger, Instagram e Mercado Livre. Cada integração tem um custo adicional de R$ 60,00 por mês e pode ser ativada facilmente através do painel de controle.'
+      answer: 'O Kanzap oferece integrações nativas com diversas plataformas como Facebook Messenger, Instagram e Mercado Livre. Cada integração tem um custo adicional de R$ 60,00 por mês.'
     },
     {
       question: 'É possível automatizar mensagens e respostas?',

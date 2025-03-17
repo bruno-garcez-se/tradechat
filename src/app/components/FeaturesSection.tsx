@@ -46,7 +46,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'Chatbot Inteligente',
-          description: 'Automatize seus atendimentos com um chatbot totalmente personalizável, garantindo respostas rápidas e eficientes para seus clientes.'
+          description: 'Automatize seus atendimentos com um chatbot personalizável para respostas rápidas.'
         },
         {
           icon: (
@@ -88,7 +88,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'Múltiplos Atendentes',
-          description: 'Divida seus atendentes por setores e personalize a distribuição dos atendimentos para melhorar a eficiência.'
+          description: 'Divida seus atendentes por setores e personalize a distribuição dos atendimentos.'
         },
         {
           icon: (
@@ -97,7 +97,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'CRM com Kanban',
-          description: 'Gerencie seus contatos, negociações e processos comerciais com um CRM visual no formato Kanban, organizando leads e clientes de forma intuitiva.'
+          description: 'Gerencie seus contatos e processos comerciais com um CRM visual no formato Kanban.'
         },
         {
           icon: (
@@ -139,7 +139,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'Atendimento Multicanal',
-          description: 'Gerencie diferentes canais de comunicação em um único número, permitindo a integração perfeita entre sua equipe e seus clientes.'
+          description: 'Gerencie diferentes canais de comunicação em um único número para sua equipe.'
         },
         {
           icon: (
@@ -148,7 +148,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'Disparo em Massa',
-          description: 'Envie mensagens em grande escala de forma prática e rápida, alcançando todos os seus contatos simultaneamente.'
+          description: 'Envie mensagens em grande escala de forma prática, alcançando todos os seus contatos.',
         },
         {
           icon: (
@@ -172,7 +172,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'Modo Privado',
-          description: 'Garanta a privacidade dos atendimentos, restringindo o acesso a determinadas conversas conforme necessário.'
+          description: 'Garanta a privacidade dos atendimentos, restringindo o acesso às conversas.'
         },
         {
           icon: (
@@ -215,7 +215,7 @@ export default function FeaturesSection() {
             </svg>
           ),
           title: 'Fluxos Personalizados',
-          description: 'Crie e gerencie fluxos de conversa para direcionar melhor seus clientes e otimizar o atendimento.'
+          description: 'Crie e gerencie fluxos de conversa para direcionar melhor seus clientes.'
         },
         {
           icon: (
@@ -320,12 +320,40 @@ export default function FeaturesSection() {
           {categories[activeTab].features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#eb594c] transform hover:-translate-y-1"
+              className={`group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 ${
+                activeTab === 'gestao' || activeTab === 'seguranca'
+                  ? 'hover:border-[#213365]'
+                  : 'hover:border-[#eb594c]'
+              } transform hover:-translate-y-1`}
             >
-              <div className="w-14 h-14 bg-[#213365] rounded-2xl flex items-center justify-center mb-6 text-white group-hover:bg-[#eb594c] transition-colors duration-300">
+              <div className={`w-14 h-14 ${
+                activeTab === 'gestao' || 
+                activeTab === 'seguranca' || 
+                feature.title === 'Múltiplos Atendentes' ||
+                feature.title === 'CRM com Kanban' ||
+                feature.title === 'Criação de Tarefas' ||
+                feature.title === 'Gerenciamento de Filas e Setores' ||
+                feature.title === 'Modo Privado' ||
+                feature.title === 'Espiar Conversas' ||
+                feature.title === 'Número de Protocolo' ||
+                feature.title === 'Histórico de Conversas'
+                  ? 'bg-[#eb594c] group-hover:bg-[#213365]' 
+                  : 'bg-[#213365] group-hover:bg-[#eb594c]'
+              } rounded-2xl flex items-center justify-center mb-6 text-white transition-colors duration-300 mx-auto`}>
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold text-[#213365] mb-4 group-hover:text-[#eb594c] transition-colors duration-300">
+              <h3 className={`text-xl font-bold text-center ${
+                feature.title === 'Múltiplos Atendentes' ||
+                feature.title === 'CRM com Kanban' ||
+                feature.title === 'Criação de Tarefas' ||
+                feature.title === 'Gerenciamento de Filas e Setores' ||
+                feature.title === 'Modo Privado' ||
+                feature.title === 'Espiar Conversas' ||
+                feature.title === 'Número de Protocolo' ||
+                feature.title === 'Histórico de Conversas'
+                  ? 'text-[#eb594c] group-hover:text-[#213365]'
+                  : 'text-[#213365] group-hover:text-[#eb594c]'
+              } mb-4 transition-colors duration-300`}>
                 {feature.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">
