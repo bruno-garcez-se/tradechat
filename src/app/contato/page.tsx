@@ -84,7 +84,7 @@ export default function ContatoPage() {
                 <h2 className="text-2xl font-semibold text-[#213365] mb-6">Redes Sociais</h2>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.instagram.com/kanzapinc"
+                    href="https://www.instagram.com/kanzap.oficial"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-gradient-to-tr from-purple-600 to-pink-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
@@ -94,7 +94,7 @@ export default function ContatoPage() {
                     </svg>
                   </a>
                   <a
-                    href="https://www.facebook.com/kanzapinc"
+                    href="https://www.facebook.com/kanzap.oficial"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-[#1877f2] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
@@ -104,7 +104,7 @@ export default function ContatoPage() {
                     </svg>
                   </a>
                   <a
-                    href="https://www.youtube.com/@kanzapinc"
+                    href="https://www.youtube.com/@kanzap.Oficial"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-[#ff0000] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
