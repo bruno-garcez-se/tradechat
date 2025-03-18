@@ -74,7 +74,7 @@ export default function DemoScheduler() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#eb594c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3A6604] focus:border-transparent"
               placeholder="Seu nome completo"
             />
           </div>
@@ -87,7 +87,7 @@ export default function DemoScheduler() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#eb594c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3A6604] focus:border-transparent"
               placeholder="seu@email.com"
             />
           </div>
@@ -100,7 +100,7 @@ export default function DemoScheduler() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#eb594c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3A6604] focus:border-transparent"
               placeholder="(00) 00000-0000"
             />
           </div>
@@ -113,7 +113,7 @@ export default function DemoScheduler() {
               value={formData.company}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#eb594c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3A6604] focus:border-transparent"
               placeholder="Nome da sua empresa"
             />
           </div>
@@ -127,7 +127,7 @@ export default function DemoScheduler() {
               onChange={handleChange}
               required
               min={new Date().toISOString().split('T')[0]}
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#eb594c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3A6604] focus:border-transparent"
             />
           </div>
           <div>
@@ -141,7 +141,7 @@ export default function DemoScheduler() {
               required
               min="09:00"
               max="18:00"
-              className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#eb594c] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3A6604] focus:border-transparent"
             />
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function DemoScheduler() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-block bg-white text-[#213365] px-8 py-3 rounded-full hover:bg-[#eb594c] hover:text-white transition-all duration-300 hover:scale-105 transform shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            className="inline-block bg-white text-[#000000] px-8 py-3 rounded-full hover:bg-[#3A6604] hover:text-white transition-all duration-300 hover:scale-105 transform shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? 'Agendando...' : 'Agendar Demonstração'}
           </button>

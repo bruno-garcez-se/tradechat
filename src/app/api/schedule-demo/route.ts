@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     // Configurar o email
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'kanzapinc@gmail.com', // Email que receberá as solicitações
+      to: 'tradechat@gmail.com', // Email que receberá as solicitações
       subject: `Nova solicitação de demonstração - ${name}`,
       html: `
         <h1>Nova solicitação de demonstração</h1>

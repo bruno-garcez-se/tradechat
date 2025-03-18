@@ -13,23 +13,23 @@ export default function FAQSection() {
   const faqs: FAQItem[] = [
     {
       question: 'Como funciona o período de teste gratuito?',
-      answer: 'Oferecemos um período de teste gratuito para que você possa experimentar todas as funcionalidades da plataforma. Durante este período, você terá acesso completo a todos os recursos e poderá avaliar como o Kanzap pode ajudar seu negócio.'
+      answer: 'Oferecemos um período de teste gratuito para que você possa experimentar todas as funcionalidades da plataforma. Durante este período, você terá acesso completo a todos os recursos e poderá avaliar como o TradeChat pode ajudar seu negócio.'
     },
     {
       question: 'Preciso instalar algum software adicional?',
-      answer: 'Não é necessário instalar nenhum software adicional. O Kanzap é uma plataforma totalmente baseada na web, acessível através de qualquer navegador moderno. Basta fazer login e começar a usar.'
+      answer: 'Não é necessário instalar nenhum software adicional. O TradeChat é uma plataforma totalmente baseada na web, acessível através de qualquer navegador moderno. Basta fazer login e começar a usar.'
     },
     {
       question: 'Posso usar mais de um número de WhatsApp?',
-      answer: 'Sim, você pode conectar múltiplos números de WhatsApp à sua conta Kanzap. Cada plano oferece um número específico de conexões, e você pode gerenciar todos eles através de uma única interface.'
+      answer: 'Sim, você pode conectar múltiplos números de WhatsApp à sua conta TradeChat. Cada plano oferece um número específico de conexões, e você pode gerenciar todos eles através de uma única interface.'
     },
     {
       question: 'Como funcionam as integrações com outras plataformas?',
-      answer: 'O Kanzap oferece integrações nativas com diversas plataformas como Facebook Messenger, Instagram e Mercado Livre. Cada integração tem um custo adicional de R$ 60,00 por mês.'
+      answer: 'O TradeChat oferece integrações nativas com diversas plataformas como Facebook Messenger, Instagram e Mercado Livre. Cada integração tem um custo adicional de R$ 60,00 por mês.'
     },
     {
       question: 'É possível automatizar mensagens e respostas?',
-      answer: 'Sim, o Kanzap oferece recursos avançados de automação. Você pode criar fluxos de mensagens automáticas, respostas predefinidas e chatbots personalizados para otimizar seu atendimento.'
+      answer: 'Sim, o TradeChat oferece recursos avançados de automação. Você pode criar fluxos de mensagens automáticas, respostas predefinidas e chatbots personalizados para otimizar seu atendimento.'
     }
   ]
 
@@ -38,14 +38,14 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#213365]/5 via-white to-[#eb594c]/5 relative">
+    <section id="faq" className="py-20 bg-gradient-to-br from-[#000000]/5 via-white to-[#3A6604]/5 relative">
       {/* Efeito de fundo */}
       <div className="absolute inset-0 bg-[url('/wave.svg')] bg-repeat opacity-5"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
-            Perguntas <span className="text-[#eb594c]">Frequentes</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#000000] mb-6">
+            Perguntas <span className="text-[#3A6604]">Frequentes</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Encontre respostas para as dúvidas mais comuns sobre nossa plataforma
@@ -63,12 +63,12 @@ export default function FAQSection() {
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold text-[#213365] group-hover:text-[#eb594c] transition-colors duration-300">
+                  <h3 className="text-lg font-semibold text-[#000000] group-hover:text-[#3A6604] transition-colors duration-300">
                     {faq.question}
                   </h3>
                   <span className={`transform transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}>
                     <svg
-                      className="w-6 h-6 text-[#eb594c]"
+                      className="w-6 h-6 text-[#3A6604]"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

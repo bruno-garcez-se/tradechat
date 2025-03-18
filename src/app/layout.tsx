@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Kanzap - Revolucione seu atendimento com WhatsApp',
+  title: 'TradeChat - Revolucione seu atendimento com WhatsApp',
   description: 'Gerencie múltiplos atendimentos pelo WhatsApp de forma profissional e eficiente. Aumente suas vendas e satisfação dos clientes.',
   icons: {
     icon: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#213365',
+  themeColor: '#000000',
   width: 'device-width',
   initialScale: 1,
 }

@@ -71,7 +71,7 @@ export default function ContactForm() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#213365] focus:border-transparent transition duration-150 ease-in-out"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#000000] focus:border-transparent transition duration-150 ease-in-out"
               placeholder="Seu nome completo"
             />
           </div>
@@ -97,7 +97,7 @@ export default function ContactForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#213365] focus:border-transparent transition duration-150 ease-in-out"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#000000] focus:border-transparent transition duration-150 ease-in-out"
               placeholder="seu@email.com"
             />
           </div>
@@ -123,7 +123,7 @@ export default function ContactForm() {
             required
             value={formData.phone}
             onChange={handleChange}
-            className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#213365] focus:border-transparent transition duration-150 ease-in-out"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#000000] focus:border-transparent transition duration-150 ease-in-out"
             placeholder="(00) 00000-0000"
           />
         </div>
@@ -152,7 +152,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#213365] focus:border-transparent transition duration-150 ease-in-out resize-none"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#000000] focus:border-transparent transition duration-150 ease-in-out resize-none"
             placeholder="Sua mensagem"
           />
         </div>
@@ -162,7 +162,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === 'sending'}
-          className={`px-6 py-2.5 bg-[#213365] text-white rounded-full hover:bg-[#eb594c] transition-colors duration-300 ${
+          className={`px-6 py-2.5 bg-[#000000] text-white rounded-full hover:bg-[#3A6604] transition-colors duration-300 ${
             status === 'sending' ? 'opacity-50 cursor-not-allowed' : ''
           }`}
         >

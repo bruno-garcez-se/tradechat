@@ -5,17 +5,17 @@ import Image from 'next/image'
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#213365]/5 via-white to-[#eb594c]/5 relative">
+    <section id="depoimentos" className="py-20 bg-gradient-to-br from-[#000000]/5 via-white to-[#3A6604]/5 relative">
       {/* Efeito de fundo */}
       <div className="absolute inset-0 bg-[url('/wave.svg')] bg-repeat opacity-5"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
-            O que nossos <span className="text-[#eb594c]">clientes</span> dizem
+          <h2 className="text-4xl md:text-5xl font-bold text-[#000000] mb-6">
+            O que nossos <span className="text-[#3A6604]">clientes</span> dizem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Descubra como o Kanzap está transformando empresas por todo o Brasil
+            Descubra como o TradeChat está transformando empresas por todo o Brasil
           </p>
         </div>
 
@@ -32,13 +32,13 @@ export default function TestimonialsSection() {
                 />
               </div>
               <div className="ml-4">
-                <p className="font-semibold text-[#213365]">Louise Helen</p>
+                <p className="font-semibold text-[#000000]">Louise Helen</p>
                 <p className="text-gray-500 text-sm">Escrevente</p>
-                <p className="text-[#eb594c] text-sm">Cartório 1º Ofício</p>
+                <p className="text-[#3A6604] text-sm">Cartório 1º Ofício</p>
               </div>
             </div>
             <blockquote className="text-gray-600 italic">
-              "O Kanzap revolucionou nossa forma de atender clientes. A organização e eficiência melhoraram drasticamente, e nossos clientes notaram a diferença!"
+              "O TradeChat revolucionou nossa forma de atender clientes. A organização e eficiência melhoraram drasticamente, e nossos clientes notaram a diferença!"
             </blockquote>
           </div>
 
@@ -54,13 +54,13 @@ export default function TestimonialsSection() {
                 />
               </div>
               <div className="ml-4">
-                <p className="font-semibold text-[#213365]">Rafael Santos</p>
+                <p className="font-semibold text-[#000000]">Rafael Santos</p>
                 <p className="text-gray-500 text-sm">Proprietário</p>
-                <p className="text-[#eb594c] text-sm">Agência R2</p>
+                <p className="text-[#3A6604] text-sm">Agência R2</p>
               </div>
             </div>
             <blockquote className="text-gray-600 italic">
-              "O Kanzap transformou nossa comunicação com os clientes. A facilidade de gerenciar múltiplos atendimentos e a integração com nossas redes sociais otimizou nossos resultados."
+              "O TradeChat transformou nossa comunicação com os clientes. A facilidade de gerenciar múltiplos atendimentos e a integração com nossas redes sociais otimizou nossos resultados."
             </blockquote>
           </div>
 
@@ -76,9 +76,9 @@ export default function TestimonialsSection() {
                 />
               </div>
               <div className="ml-4">
-                <p className="font-semibold text-[#213365]">Lilian Daniele</p>
+                <p className="font-semibold text-[#000000]">Lilian Daniele</p>
                 <p className="text-gray-500 text-sm">Sócia/Contadora</p>
-                <p className="text-[#eb594c] text-sm">Persiga Contabilidade</p>
+                <p className="text-[#3A6604] text-sm">Persiga Contabilidade</p>
               </div>
             </div>
             <blockquote className="text-gray-600 italic">

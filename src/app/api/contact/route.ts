@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: 'kanzapinc@gmail.com',
+      to: 'tradechat@gmail.com',
       subject: `Novo contato do site - ${name}`,
       html: `
         <h1>Novo contato do site</h1>

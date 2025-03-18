@@ -249,14 +249,14 @@ export default function FeaturesSection() {
   }
 
   return (
-    <section id="recursos" className="py-20 bg-gradient-to-br from-[#213365]/5 via-white to-[#eb594c]/5 relative">
+    <section id="recursos" className="py-20 bg-gradient-to-br from-[#000000]/5 via-white to-[#3A6604]/5 relative">
       {/* Efeito de fundo */}
       <div className="absolute inset-0 bg-[url('/wave.svg')] bg-repeat opacity-5"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#213365] mb-6">
-            Recursos <span className="text-[#eb594c]">Poderosos</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#000000] mb-6">
+            Recursos <span className="text-[#3A6604]">Poderosos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Tudo que você precisa para transformar seu atendimento e aumentar suas vendas em uma única plataforma
@@ -272,7 +272,7 @@ export default function FeaturesSection() {
                 onClick={() => handleTabClick(key)}
                 className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                   activeTab === key
-                    ? 'bg-[#eb594c] text-white shadow-lg'
+                    ? 'bg-[#3A6604] text-white shadow-lg'
                     : 'bg-white text-gray-600 hover:bg-gray-50'
                 }`}
               >
@@ -284,7 +284,7 @@ export default function FeaturesSection() {
           {/* Controle de auto-play */}
           <button
             onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-            className="flex items-center gap-2 text-sm text-gray-600 hover:text-[#213365] transition-colors"
+            className="flex items-center gap-2 text-sm text-gray-600 hover:text-[#000000] transition-colors"
           >
             {isAutoPlaying ? (
               <>
@@ -307,7 +307,7 @@ export default function FeaturesSection() {
 
         {/* Descrição da categoria com animação de fade */}
         <div className="text-center mb-12 transition-opacity duration-300">
-          <h3 className="text-2xl font-bold text-[#213365] mb-3">
+          <h3 className="text-2xl font-bold text-[#000000] mb-3">
             {categories[activeTab].title}
           </h3>
           <p className="text-gray-600">
@@ -322,8 +322,8 @@ export default function FeaturesSection() {
               key={index}
               className={`group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 ${
                 activeTab === 'gestao' || activeTab === 'seguranca'
-                  ? 'hover:border-[#213365]'
-                  : 'hover:border-[#eb594c]'
+                  ? 'hover:border-[#000000]'
+                  : 'hover:border-[#3A6604]'
               } transform hover:-translate-y-1`}
             >
               <div className={`w-14 h-14 ${
@@ -337,8 +337,8 @@ export default function FeaturesSection() {
                 feature.title === 'Espiar Conversas' ||
                 feature.title === 'Número de Protocolo' ||
                 feature.title === 'Histórico de Conversas'
-                  ? 'bg-[#eb594c] group-hover:bg-[#213365]' 
-                  : 'bg-[#213365] group-hover:bg-[#eb594c]'
+                  ? 'bg-[#3A6604] group-hover:bg-[#000000]' 
+                  : 'bg-[#000000] group-hover:bg-[#3A6604]'
               } rounded-2xl flex items-center justify-center mb-6 text-white transition-colors duration-300 mx-auto`}>
                 {feature.icon}
               </div>
@@ -351,8 +351,8 @@ export default function FeaturesSection() {
                 feature.title === 'Espiar Conversas' ||
                 feature.title === 'Número de Protocolo' ||
                 feature.title === 'Histórico de Conversas'
-                  ? 'text-[#eb594c] group-hover:text-[#213365]'
-                  : 'text-[#213365] group-hover:text-[#eb594c]'
+                  ? 'text-[#3A6604] group-hover:text-[#000000]'
+                  : 'text-[#000000] group-hover:text-[#3A6604]'
               } mb-4 transition-colors duration-300`}>
                 {feature.title}
               </h3>

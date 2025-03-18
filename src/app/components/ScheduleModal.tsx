@@ -80,13 +80,13 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
               <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-8 text-left align-middle shadow-xl transition-all">
                 <Dialog.Title
                   as="h3"
-                  className="text-2xl font-bold text-[#213365] mb-2"
+                  className="text-2xl font-bold text-[#000000] mb-2"
                 >
                   Agendar Demonstração
                 </Dialog.Title>
                 <div className="mt-2">
                   <p className="text-gray-600">
-                    Agende uma demonstração gratuita e descubra como o Kanzap pode transformar seu atendimento
+                    Agende uma demonstração gratuita e descubra como o TradeChat pode transformar seu atendimento
                   </p>
                 </div>
 
@@ -102,7 +102,7 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#213365] focus:ring-2 focus:ring-[#213365]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
+                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#000000] focus:ring-2 focus:ring-[#000000]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
                       placeholder="Digite seu nome"
                     />
                   </div>
@@ -118,7 +118,7 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#213365] focus:ring-2 focus:ring-[#213365]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
+                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#000000] focus:ring-2 focus:ring-[#000000]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
                       placeholder="Digite seu e-mail"
                     />
                   </div>
@@ -134,7 +134,7 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#213365] focus:ring-2 focus:ring-[#213365]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
+                      className="block w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#000000] focus:ring-2 focus:ring-[#000000]/20 transition-all duration-200 bg-gray-50 hover:bg-white"
                       placeholder="(00) 00000-0000"
                     />
                   </div>
@@ -155,7 +155,7 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full flex items-center justify-center px-8 py-4 rounded-xl bg-[#213365] text-white font-semibold hover:bg-[#eb594c] transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full flex items-center justify-center px-8 py-4 rounded-xl bg-[#000000] text-white font-semibold hover:bg-[#3A6604] transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? 'Agendando...' : 'Agendar Demonstração'}
                     </button>

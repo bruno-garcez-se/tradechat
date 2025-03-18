@@ -1,81 +1,54 @@
-# Kanzap - Sistema de Multi-atendimento via WhatsApp
+# TradeChat
 
-Site institucional do Kanzap, uma solução completa para gerenciamento de múltiplos atendimentos via WhatsApp.
+Sistema de atendimento multicanal via WhatsApp desenvolvido com Next.js e Tailwind CSS.
 
-## Tecnologias Utilizadas
+## 🚀 Funcionalidades
 
-- Next.js 14
-- React
-- TypeScript
-- Tailwind CSS
-- PostCSS
-- ESLint
+- Atendimento multicanal via WhatsApp
+- Interface moderna e responsiva
+- Integração com redes sociais
+- Sistema de agendamento de demonstrações
+- Seção de preços e planos
+- FAQ interativo
+- Depoimentos de clientes
 
-## Requisitos
+## 🛠️ Tecnologias Utilizadas
 
-- Node.js 18.17 ou superior
-- npm ou yarn
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Como Instalar
+## 📦 Instalação
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/kanzap-site.git
-cd kanzap-site
+git clone https://github.com/seu-usuario/tradechat.git
 ```
 
 2. Instale as dependências:
 ```bash
+cd tradechat
 npm install
-# ou
-yarn install
 ```
 
 3. Execute o projeto em modo de desenvolvimento:
 ```bash
 npm run dev
-# ou
-yarn dev
 ```
 
-4. Acesse o site em `http://localhost:3000`
+O projeto estará disponível em `http://localhost:3000`
 
-## Scripts Disponíveis
+## 🤝 Contribuindo
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria a versão de produção
-- `npm start` - Inicia o servidor de produção
-- `npm run lint` - Executa a verificação de código com ESLint
+Contribuições são sempre bem-vindas! Para contribuir:
 
-## Estrutura do Projeto
-
-```
-kanzap-site/
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── FeaturesSection.tsx
-│   │   │   ├── MobileMenu.tsx
-│   │   │   └── PricingSection.tsx
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   └── ...
-├── public/
-├── package.json
-├── tailwind.config.ts
-├── postcss.config.js
-└── README.md
-```
-
-## Contribuindo
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
-3. Faça commit das suas alterações (`git commit -m 'Adiciona nova feature'`)
-4. Faça push para a branch (`git push origin feature/nova-feature`)
+1. Fork o projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## Licença
+## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes. 
