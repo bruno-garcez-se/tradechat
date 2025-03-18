@@ -132,19 +132,11 @@ export default function SobrePage() {
                 <h2 className="text-2xl font-semibold text-[#213365] mb-4">
                   Nossa Equipe
                 </h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600">
                   Somos uma equipe apaixonada por tecnologia e inovação, comprometida em 
                   oferecer as melhores soluções para nossos clientes. Nossa diversidade 
                   de experiências e habilidades nos permite criar soluções únicas e eficientes.
                 </p>
-                <div className="aspect-video relative rounded-lg overflow-hidden">
-                  <Image
-                    src="/team.jpg"
-                    alt="Equipe Kanzap"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
               </div>
             </div>
           </div>
