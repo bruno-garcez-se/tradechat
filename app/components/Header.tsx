@@ -12,9 +12,10 @@ export default function Header() {
             <Image
               src="/logo.png"
               alt="TradeChat Logo"
-              width={220}
-              height={60}
-              className="h-16"
+              width={180}
+              height={50}
+              className="h-12 w-auto"
+              priority
             />
           </Link>
           <nav className="hidden md:flex space-x-6">

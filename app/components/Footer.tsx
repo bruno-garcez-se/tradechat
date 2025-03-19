@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="text-white text-2xl font-bold mb-4">
-              Trade Chat
+            <div className="text-2xl font-bold mb-4">
+              Trade <span className="text-[#3A6604]">Chat</span>
             </div>
             <p className="text-gray-300">
               Sistema de atendimento multicanal via WhatsApp para traders e investidores.
